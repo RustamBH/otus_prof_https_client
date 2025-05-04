@@ -12,7 +12,7 @@ TEST(ClientTest, ConnectToServer) {
 	client.request("localhost", "4433", "/");   
 	ioc.run();
 	std::string response = client.get_response();		
-        ASSERT_FALSE(response.empty();
+        ASSERT_FALSE(response.empty());
 }
 
 TEST(ClientTest, HandleInvalidPath) {
