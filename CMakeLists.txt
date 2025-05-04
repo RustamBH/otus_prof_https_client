@@ -63,8 +63,8 @@ target_link_libraries(
 	${TEST_NAME} PRIVATE
 	GTest::gtest 
 	GTest::gtest_main 
-	GTest::gmock 
-	GTest::gmock_main 
+	#GTest::gmock 
+	#GTest::gmock_main 
 )
 
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
