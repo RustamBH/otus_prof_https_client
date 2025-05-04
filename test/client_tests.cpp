@@ -3,6 +3,9 @@
 
 using namespace https_client;
 
+#define EXPECT_NO_THROW(statement) \
+  GTEST_TEST_NO_THROW_(statement, GTEST_NONFATAL_FAILURE_
+
 TEST(ClientTest, ConnectToServer) {
 	net::io_context ioc;
 	ssl::context ctx{ ssl::context::tlsv12_client };	
