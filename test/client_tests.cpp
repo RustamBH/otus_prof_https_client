@@ -29,5 +29,5 @@ TEST(ClientTest, HandleInvalidPath) {
 	client.request("localhost", "4433", "/nonexistent");   
 	ioc.run();
 	std::string response = client.get_response();		
-        ASSERT_FALSE(response.find("404 Not Found") != std::string::npos);
+        ASSERT_TRUE(response.find("404 Not Found") != std::string::npos);
 }
