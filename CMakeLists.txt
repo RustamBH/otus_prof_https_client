@@ -73,7 +73,7 @@ target_link_libraries(
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
 
 # properties
-set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
+set_target_properties(${PROJECT_NAME} client_lib PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
 set_target_properties(${TEST_NAME} PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED ON)
 
 #--------------------------------------------------------------------------------------------------
