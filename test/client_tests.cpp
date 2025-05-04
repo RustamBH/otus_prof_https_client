@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/client.hpp"
-
-using namespace https_client;
+#include "client.hpp"
 
 TEST(ClientTest, ConnectToServer) {
 	net::io_context ioc;
