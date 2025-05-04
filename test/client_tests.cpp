@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/client/client.hpp"
+#include "../src/client.hpp"
 
 using namespace https_client;
 
