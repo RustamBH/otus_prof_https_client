@@ -62,7 +62,8 @@ add_executable(
 target_link_libraries(
 	${TEST_NAME} PRIVATE
 	GTest::gtest 
-	GTest::gtest_main  
+	GTest::gtest_main 
+ 	${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES}
 )
 
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
