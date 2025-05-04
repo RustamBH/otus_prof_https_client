@@ -45,7 +45,7 @@ project(${PROJECT_NAME} VERSION ${PROJECT_VESRION})
 # Main target
 add_executable(
     ${PROJECT_NAME}
-	${SRC_DIR}/main.cpp
+    ${SRC_DIR}/main.cpp
     ${SRC_DIR}/client.cpp
     ${SRC_DIR}/client.hpp
 )
