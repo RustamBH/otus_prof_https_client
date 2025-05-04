@@ -53,7 +53,7 @@ add_executable(
 target_link_libraries(${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${GTEST_LIBRARY} ${GTEST_MAIN_LIBRARY})
 
 # example library
-add_library(client_lib client.cpp)
+add_library(client_lib ${SRC_DIR}/client.cpp)
 
 # Test target
 add_executable(
