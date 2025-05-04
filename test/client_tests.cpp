@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "../src/client.hpp"
+#include "../src/client.cpp"
 
 TEST(ClientTest, ConnectToServer) {
 	net::io_context ioc;
