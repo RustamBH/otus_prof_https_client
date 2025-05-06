@@ -18,4 +18,4 @@ openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 
 g++ -std=c++17 -o client client.cpp -lboost_system -lssl -lcrypto
 
 4. Запустите клиент:
-./client localhost 443 /index.html
+./https_client localhost 443 /index.html
