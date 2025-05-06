@@ -36,8 +36,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./client-0.0.${{ github.run_number }}-Linux.deb          
-          asset_name: client-0.0.${{ github.run_number }}-Linux.deb          
+          asset_path: ./https_client-0.0.${{ github.run_number }}-Linux.deb          
+          asset_name: https_client-0.0.${{ github.run_number }}-Linux.deb          
           asset_content_type: application/vnd.debian.binary-package
 
       - name: Run tests
